@@ -1,0 +1,235 @@
+/* su media yra svarbi seka. galim htmle uzdeti atskira eilute link ir ja deti zemiau style. taip pat svarbi ir seka. didziausias turi buti virsuje, apacioje - mazejantys */
+
+
+/* desktop first - pradedam nuo didesnio, pereinam prie mazesnio. naudojam max-width */
+
+
+/* mobbile first - susidedam pradzioje mobile. naudojami min-width */
+
+* {
+    font-family: Space Grotesk, sans-serif;
+    /* naudojamas paryskinti krastus (outline'us) */
+    /*  outline: solid 1px #000; */
+}
+
+.master-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0 35px;
+    /* max-height: 880px; */
+}
+
+header {
+    position: sticky;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1170px;
+}
+
+.left,
+.right {
+    /* neveuikia calcas. gauta 25px/880px ir pavertus i VHus */
+    /* margin-top: calc(25vh/880vh); */
+    margin-top: 1.82vh;
+}
+
+.center {
+    display: flex;
+    /* width: 39.82%; */
+    justify-content: space-between;
+    /* neveuikia calcas. gauta 25px/880px ir pavertus i VHus */
+    /* margin-top: calc(25vh/880vh); */
+    margin-top: 2.84vh;
+}
+
+.left {
+    /* font-family: 'Space Grotesk', sans-serif; */
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#about,
+#speakers,
+#schedule,
+#news {
+    margin: 0 3vw;
+}
+
+#topbutton,
+#midbutton {
+    /* width: 138px;
+    height: 48px; */
+    padding: 16px 32px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    /* font-family: Space Grotesk; */
+    border: 1px solid rgba(17, 17, 17, 0.303074);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#topbutton {
+    color: #111111;
+    background-color: #fff;
+}
+
+#midbutton {
+    /* left: 135px;
+    top: 528px; */
+    background-color: #EB5A43;
+    color: #fff;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+/* butina visurinius elementus pakeisti tokiom proporcijom, kad u=imt7 100% */
+
+.text {
+    width: 51%;
+}
+
+.pic {
+    width: 49%;
+    /* height: 464px; */
+    /* object-fit: cover; */
+    align-items: center;
+}
+
+hr {
+    max-width: 1170px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#conference {
+    color: #EB5A43;
+    /* identical to box height, or 168% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    /* font-family: Space Grotesk; */
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+}
+
+#busconf,
+#sky {
+    color: rgba(51, 51, 51, 1);
+    /* font-family: Space Grotesk; */
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 32px;
+    max-width: 470px;
+}
+
+#busconf {
+    /* font-family: Space Grotesk; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 80px;
+    /* or 111% */
+    letter-spacing: -2px;
+}
+
+#sky {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+
+/* footer {
+    align-items: center;
+} */
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    align-items: center;
+    max-width: 1170px;
+    padding-bottom: 32px;
+}
+
+.bttm-left,
+.bttm-center,
+.bttm-right {
+    display: flex;
+}
+
+.pic img {
+    width: 100%;
+    display: block;
+    max-width: 570px;
+}
+
+
+/* .pic-block {
+    background-color: orange;
+    80/880px=9.09v
+    width: 80px;
+    height: 80px; 
+} */
+
+.bttm-left img,
+.bttm-center img,
+.bttm-right img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.bttm-txt-center,
+.bttm-txt-right,
+.bttm-txt-left {
+    margin-left: 20px;
+}
+
+.top-text {
+    font-weight: bold;
+    font-size: 24px;
+    /* identical to box height, or 133% */
+    color: #333333;
+}
+
+
+/* by default, praragraph contains some margin */
+
+.top-text {
+    margin: 0;
+    padding: 4px 0;
+}
+
+.bttm-text {
+    padding: 8px 0;
+    margin: 0;
+}

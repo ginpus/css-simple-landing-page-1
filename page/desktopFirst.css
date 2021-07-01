@@ -1,0 +1,61 @@
+@media (max-width: 1170px) {
+    .pic img {
+        /* width: auto; */
+        height: auto;
+    }
+}
+
+@media (max-width: 1105px) {
+    header {
+        margin-bottom: 32px;
+    }
+    .middle {
+        flex-direction: column-reverse;
+    }
+    .text {
+        width: 100%;
+    }
+    #speakers,
+    #schedule,
+    #news {
+        margin: 0 2vw;
+    }
+    .pic {
+        width: 100%;
+    }
+    #sky {
+        max-width: unset;
+    }
+    footer {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .center {
+        display: none;
+    }
+    #busconf {
+        font-size: 56px;
+        line-height: 64px;
+        /* or 111% */
+        letter-spacing: -1px;
+    }
+    .bottom {
+        flex-direction: column;
+        /* prichimycinau su tarpais, tai reikia nuimti */
+        align-items: unset;
+        margin-bottom: 32px;
+    }
+    .bttm-left,
+    .bttm-center,
+    .bttm-right {
+        margin-bottom: 16px;
+    }
+    #sky {
+        margin: 32px 0;
+    }
+    footer {
+        margin-top: 80px;
+    }
+}
